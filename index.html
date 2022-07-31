@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Buscador de CEP</title>
+</head>
+<body>
+    <main>
+        <h1 class="title">Buscador de CEP</h1>
+        <div class="containerInput">
+            <input type="number" id="input" placeholder="Digite um CEP">
+            <button onclick="getLocate()"><i class="bi bi-search"></i></button>
+        </div>
+        <div class="results">
+            <h2 id="cep"></h2>
+
+            <span id="rua"></span>
+            <span id="complemento"></span>
+            <span id="bairro"></span>
+            <span id="localidade"></span>
+            <span id="ddd"></span>
+            <div class="img"><img src="" id="notFixed"></div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
